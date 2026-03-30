@@ -1,7 +1,7 @@
 
 const NavBar = () => {
   return (
-    <div className="navbar container  w-7xl mx-auto px-4">
+    <div className="navbar container  w-7xl mx-auto">
       <div className="navbar-start">
         <h1 className="font-bold text-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</h1>
       </div>
