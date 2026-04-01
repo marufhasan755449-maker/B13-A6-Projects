@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Create professional resumes with AI-powered suggestions and modern templates.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "AI content suggestions"
+    ],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Build a stunning personal portfolio website with no coding required.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Custom domains",
+      "Drag & drop builder",
+      "SEO optimized",
+      "Mobile responsive"
+    ],
+    "icon": "🌐"
+  },
+  {
+    "id": 3,
+    "name": "AI Cover Letter Generator",
+    "description": "Generate tailored cover letters instantly using advanced AI.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "AI-generated content",
+      "Job-specific customization",
+      "Multiple formats",
+      "Download as PDF"
+    ],
+    "icon": "✉️"
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker Pro",
+    "description": "Track job applications, interviews, and follow-ups in one place.",
+    "price": 29,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Application tracking",
+      "Interview reminders",
+      "Analytics dashboard",
+      "Cloud sync"
+    ],
+    "icon": "📊"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Optimizer",
+    "description": "Enhance your LinkedIn profile to attract recruiters and opportunities.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Profile analysis",
+      "Keyword optimization",
+      "Headline generator",
+      "Engagement tips"
+    ],
+    "icon": "💼"
+  },
+  {
+    "id": 6,
+    "name": "Freelancer Starter Pack",
+    "description": "Everything you need to start freelancing and land your first clients.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Proposal templates",
+      "Client management tools",
+      "Invoice generator",
+      "Freelance guide"
+    ],
+    "icon": "🚀"
+  },
+  {
+    "id": 7,
+    "name": "Interview Prep Master",
+    "description": "Practice interviews with AI and improve your confidence.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Mock interviews",
+      "AI feedback",
+      "Common questions bank",
+      "Performance tracking"
+    ],
+    "icon": "🎤"
+  },
+  {
+    "id": 8,
+    "name": "Career Growth Academy",
+    "description": "Access premium courses to boost your career skills.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Expert-led courses",
+      "Certificates",
+      "Skill assessments",
+      "Community access"
+    ],
+    "icon": "🎓"
+  }
+]
