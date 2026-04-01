@@ -4,6 +4,7 @@ import BannerFooter from "./BannerFooter"
 import Models from "./Models"
 import NavBar from "./NavBar"
 import Maruf from "./Maruf"
+import GratStart from "./GratStart"
 
 
 
@@ -16,9 +17,9 @@ const getModels = async () => {
 
 function App() {
   const modelPromise =getModels()
-
     const [activeTab, setactivetab] = useState("Products");
-
+    const [carts,setCarts] =useState([])
+console.log(carts)
   return (
     <>
       <NavBar></NavBar>
@@ -30,12 +31,13 @@ function App() {
       </div>
       <div className="tabs tabs-box justify-center bg-transparent my-8">
   <input type="radio" name="my_tabs_1" className="tab rounded-full w-30" aria-label="Products"onClick={()=> setactivetab("Products")} defaultChecked />
-  <input type="radio" name="my_tabs_1" className="tab rounded-full w-30" aria-label="Cart (2)"onClick={()=> setactivetab("cart")} />
+  <input type="radio" name="my_tabs_1" className="tab rounded-full w-30" aria-label="${cart}"onClick={()=> setactivetab("cart")} />
 </div>
       <Suspense>
-      {activeTab ==="Products" && <Models modelPromise={modelPromise}></Models>}
+      {activeTab ==="Products" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}></Models>}
       </Suspense>
-      {activeTab ==="cart" && <Maruf></Maruf>}
+      {activeTab ==="cart" && <Maruf carts={carts} setCarts={setCarts}></Maruf>}
+      <GratStart></GratStart>
     </>
   )
 }
