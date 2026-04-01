@@ -6,6 +6,7 @@ import NavBar from "./NavBar"
 import Maruf from "./Maruf"
 import GratStart from "./GratStart"
 import Simple from "./Simple"
+import Footer from "./Footer"
 
 
 
@@ -40,6 +41,7 @@ console.log(carts)
       {activeTab ==="cart" && <Maruf carts={carts} setCarts={setCarts}></Maruf>}
       <GratStart></GratStart>
       <Simple></Simple>
+      <Footer></Footer>
     </>
   )
 }
