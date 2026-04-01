@@ -2,8 +2,8 @@ import { IoMdLocate } from "react-icons/io";
 import{FaPlay} from "react-icons/fa";
 const Banner = () => {
     return (
-        <div className="banner container w-7xl mx-auto flex justify-between gap-14 my-14 items-center">
-            <div className="space-y-4">
+        <div className="banner container w-7xl mx-auto md:flex  justify-between md:gap-14 my-14 items-center">
+            <div className="space-y-4 sm:gap-9">
                 <button className="btn bg-[#E1E7FF] rounded-full"><IoMdLocate /><span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">New: AI-Powered Tools Available</span></button>
                 <h1 className="font-bold text-6xl">Supercharge Your<br/>Digital Workflow</h1>
                 <p className="text-[#627382]">
