@@ -5,6 +5,7 @@ import Models from "./Models"
 import NavBar from "./NavBar"
 import Maruf from "./Maruf"
 import GratStart from "./GratStart"
+import Simple from "./Simple"
 
 
 
@@ -38,6 +39,7 @@ console.log(carts)
       </Suspense>
       {activeTab ==="cart" && <Maruf carts={carts} setCarts={setCarts}></Maruf>}
       <GratStart></GratStart>
+      <Simple></Simple>
     </>
   )
 }
