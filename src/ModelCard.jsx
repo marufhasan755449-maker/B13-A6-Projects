@@ -21,7 +21,7 @@ const ModelCard = ({ model }) => {
                 <p className="text-gray-600 text-sm py-3">{description}</p>
                 <div className="flex  gap-1 mt-2">
                     <h4 className="text-xl font-bold text-gray-900">${price}</h4>
-                    <p className="text-sm text-gray-500">/{period}</p>
+                    <p className=" text-gray-500">/{period}</p>
                 </div>
             </div>
             <div className="space-y-2">
