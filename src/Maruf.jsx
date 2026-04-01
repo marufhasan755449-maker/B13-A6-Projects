@@ -6,8 +6,6 @@ const Maruf = ({ carts, setCarts }) => {
     const newCart = carts.filter(itm => itm.id !== id);
     setCarts(newCart);
   };
-
-  // ১. মোট দাম বের করার লজিক (রেন্ডারিং এর সময় এটি আপডেট হবে)
   const totalPrice = carts.reduce((sum, itm) => sum + itm.price, 0);
 
   return (
@@ -18,7 +16,6 @@ const Maruf = ({ carts, setCarts }) => {
       {
         carts.length > 0 ? (
           <>
-            {/* আইটেম লিস্ট */}
             {carts.map(itm =>
               <div key={itm.id} className="mt-4">
                 <div className="flex justify-between items-center font-semibold text-xl border rounded-lg p-4 gap-3">
@@ -40,11 +37,11 @@ const Maruf = ({ carts, setCarts }) => {
             )}
             <div className="mt-10 pt-6 border-t-2 border-dashed border-gray-100">
               <div className="flex justify-between items-center mb-6">
-                <span className="text-xl font-bold text-gray-700">Total</span>
+                <span className="text-xl font-bold text-gray-700">Total:</span>
                 <span className="text-2xl font-black text-[#4F39F6]">${totalPrice}</span>
               </div>
               
-              <button className="w-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold py-4 rounded-full shadow-lg hover:opacity-90 transition-all">
+              <button className="w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold py-4 rounded-full shadow-lg hover:opacity-90 transition-all">
                 Proceed to Checkout
               </button>
             </div>

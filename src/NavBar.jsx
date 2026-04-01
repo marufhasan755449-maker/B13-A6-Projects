@@ -1,6 +1,5 @@
 import { SlBasket } from "react-icons/sl";
 
-// ১. cartCount প্রপস হিসেবে নিতে হবে (যা App.jsx থেকে আসবে)
 const NavBar = ({ cartCount }) => {
   return (
     <div className= "bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm">
@@ -20,11 +19,8 @@ const NavBar = ({ cartCount }) => {
       </div>
 
       <div className="navbar-end gap-6 flex items-center">
-        {/* ২. বাস্কেট আইকন সেকশন */}
         <div className="relative cursor-pointer group">
           <SlBasket className="text-2xl text-gray-700 group-hover:text-[#4F39F6] transition-colors" />
-          
-          {/* যদি কার্টে ১ বা তার বেশি আইটেম থাকে তবেই লাল ব্যাজটি দেখাবে */}
           {cartCount > 0 && (
             <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white shadow-sm">
               {cartCount}

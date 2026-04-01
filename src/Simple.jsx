@@ -21,15 +21,15 @@ const Simple = () => {
         <ul class="space-y-4 mb-10 flex-grow text-gray-600 text-sm">
           <li class="flex items-center gap-2">✅ Access to 10 free tools</li>
           <li class="flex items-center gap-2">✅ Basic templates</li>
-          <li class="flex items-center gap-2 text-gray-400">❌ Community support</li>
-          <li class="flex items-center gap-2 text-gray-400">❌ 1 project per month</li>
+          <li class="flex items-center gap-2 text-gray-400">Community support</li>
+          <li class="flex items-center gap-2 text-gray-400">1 project per month</li>
         </ul>
         <button class="w-full py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-xl transition shadow-md">
           Get Started Free
         </button>
       </div>
 
-      <div class="relative p-8 rounded-3xl bg-gradient-to-br from-indigo-600 to-purple-700 text-white shadow-2xl flex flex-col h-full transform md:scale-105 z-10">
+      <div class="relative p-8 rounded-3xl bg-linear-to-br from-indigo-600 to-purple-700 text-white shadow-2xl flex flex-col h-full transform md:scale-105 z-10">
         <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md">
           Most Popular
         </span>

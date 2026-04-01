@@ -19,7 +19,7 @@ const getModels = async () => {
 
 function App() {
   const modelPromise =getModels()
-    const [activeTab, setactiveTab] = useState("Products");
+    const [activeTab, setactiveTab] = useState("products");
     const [carts,setCarts] =useState([])
 console.log(carts)
   return (
@@ -31,21 +31,28 @@ console.log(carts)
         <h2 className="font-bold text-5xl">Premium Digital Tools</h2>
         <p className="text-[#627382]">Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
       </div>
-      <div className="tabs tabs-box justify-center bg-transparent my-8">
-  <input type="radio"
-   name="my_tabs_1"
-    className="tab rounded-full w-30 {activeTab === 'products' ? 'active-style' : ''}"
+     <div className="tabs tabs-box justify-center bg-transparent my-8">
+  <input 
+    type="radio" 
+    name="my_tabs_1" 
+    className={`tab rounded-full w-30 font-semibold transition-all ${activeTab === "products" ? "bg-[#4F39F6] text-white shadow-lg" : "text-gray-600"}`} 
+    aria-label="Products" 
+    onClick={() => setactiveTab("products")} 
+    defaultChecked={activeTab === "products"}
+  />
 
-     aria-label="Products"
-     onClick={()=> setactiveTab("Products")}
-      defaultChecked />
-  <input type="radio"
-   name="my_tabs_1"
-    className="tab rounded-full w-30 {activeTab === 'products' ? 'active-style' : ''}"
-     aria-label="Cart (0)"onClick={()=> setactiveTab("cart")} />
+  <input 
+    type="radio" 
+    name="my_tabs_1" 
+    className={`tab rounded-full w-30 font-semibold transition-all ${activeTab === "cart" ? "bg-[#4F39F6] text-white shadow-lg" : "text-gray-600"}`} 
+    aria-label={`Cart (${carts.length})`} 
+    onClick={() => setactiveTab("cart")} 
+    defaultChecked={activeTab === "cart"}
+  />
+
 </div>
       <Suspense>
-      {activeTab ==="Products" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}
+      {activeTab ==="products" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}
 
       ></Models>}
       </Suspense>
